@@ -129,6 +129,8 @@ def write_to_txt(batch, filepath, typ='vector', verbose ='dataset'):
                     #txt.write(str(vector[0].x) +";"+str(vector[0].y) +";"+ str(vector[0].angle) +";"+ str(vector[0].norm()) + "\n")
                     txt.write(str(vector[1].x) +";"+ str(vector[1].angle) +";"+ str(vector[1].norm()) + "\n")           
 
+
+
 def vote(caseA, caseB, conflict):
     if caseA == caseB:
         return caseA

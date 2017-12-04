@@ -123,6 +123,12 @@ def print_matrix(A):
         print(row)
 
 img = cv.imread('D:\\Dokumenty\\image-recognition\\track\\finish1.JPG', 0)
+img2 = cv.Canny(img, 520, 160)
+
+cv.namedWindow("name", cv.WINDOW_NORMAL)
+cv.imshow("name", img2)
+cv.waitKey(0)
+cv.destroyAllWindows()
 
 h, w = img.shape
 img = np.array(img)
